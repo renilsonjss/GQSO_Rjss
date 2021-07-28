@@ -1,2 +1,3 @@
 # Calculadora API (GQSO IFAL)
-TODO(renilsonjose-ifal): preencher descrição das funcionalidades do projeto
+
+Esse repositório implementa uma versão da calculadora API visando a linguagem deprogramação GO.
