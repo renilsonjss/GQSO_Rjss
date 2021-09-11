@@ -6,7 +6,7 @@ import (
 
 //Para utilização da funcionalidade soma no navegador:
     //1 - Impementar o comando "go build && ./calc-server" no terminal (sem as aspas);
-    //2 - Selecionar a opção abrir no navegador (Open Browser);
+    //2 - Selecionar a opção abrir no navegador (open in browser);
     //3 - Inserir, no fim da URL, "soma/'valor1'/'valor2'" (sem as aspas);
     //4 - O resultado da soma de "valor 1" e "valor 2" será exibid.
 
@@ -14,7 +14,7 @@ func main(){
 	app := fiber.New()
 
     app.Get("/", func(c *fiber.Ctx) error {
-        return c.SendString("Calculadora com funcionalidade soma")
+        return c.SendString("Calculadora")
     })
 
 	app.Get("/soma/:valor1/:valor2", soma)
