@@ -4,6 +4,12 @@ import (
 	"github.com/gofiber/fiber/v2"
 )
 
+//Para utilização da funcionalidade soma no navegador:
+    //1 - Impementar o comando "go build && ./calc-server" no terminal (sem as aspas);
+    //2 - Selecionar a opção abrir no navegador (open in browser);
+    //3 - Inserir, no fim da URL, "soma/'valor1'/'valor2'" (sem as aspas);
+    //4 - O resultado da soma de "valor 1" e "valor 2" será exibido.
+
 func main(){
 	app := fiber.New()
 
@@ -13,5 +19,5 @@ func main(){
 
 	app.Get("/soma/:valor1/:valor2", soma)
 
-    app.Listen(":8000")
+    app.Listen(":3000")
 }
