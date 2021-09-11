@@ -14,7 +14,7 @@ func main(){
 	app := fiber.New()
 
     app.Get("/", func(c *fiber.Ctx) error {
-        return c.SendString("Para utilização da funcionalidade soma, inserir, no fim da URL, 'soma/valor1/valor2' (sem as aspas).")
+        return c.SendString("Para utilização da funcionalidade soma, inserir, no fim da URL: 'soma/valor1/valor2' (sem as aspas).")
     })
 
 	app.Get("/soma/:valor1/:valor2", soma)
