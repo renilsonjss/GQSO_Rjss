@@ -11,7 +11,7 @@ func main(){
         return c.SendString("Para utilização da funcionalidade soma, inserir, no fim da URL: 'soma/valor1/valor2' (sem as aspas).")
     })
 
-	app.Get("/soma/:valor1/:valor2", soma)
+	app.Get("/soma/:valor1/:valor2", somaHandler)
 
     app.Listen(":8000")
 }
